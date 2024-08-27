@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    background-color: #b81414;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav li a:hover{
+    background-color: white;
+    color: black;
+}
+
+button{
+   color: #000000;
+   background-color: #b81414;
+   border-color: #b81414;
+   width: 50px;
+   text-decoration: none;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+button:hover{
+   background-color: #fff;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produto {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.produto h2 {
+    margin: 10px 0;
+}
+
+.produto p {
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.buy-button {
+    width:80% ;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #2980b9;
+}
+
+footer{
+    padding: 50px 0;
+    font-size: 100% ; 
+    background-color: #3c3c3c;  
+}
+footer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100px;
+    height: 1px;
+    width: 100%;
+  }
+  footer .content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+  }
+  footer .content .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .content .top .logo-details{
+    color: #ffffff;
+    font-size: 30px;
+  }
+  .content .top .media-icons{
+    display: flex;
+  }
+  .content .top .media-icons a{
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+.top .media-icons a:nth-child(1){
+    background:  #34af23;
+}
+.top .media-icons a:nth-child(1):hover{
+    color:  #34af23;
+    background: #ffffff;
+}
+.top .media-icons a:nth-child(2){
+    background: #4267B2;
+}
+.top .media-icons a:nth-child(2):hover{
+    color: #4267B2;
+    background: #ffffff;
+}
+.top .media-icons a:nth-child(3){
+    background: #E1306C;
+}
+.top .media-icons a:nth-child(3):hover{
+    color: #E1306C;
+    background: #ffffff;
+}
+.top .media-icons a:nth-child(4){
+    background: #1DA1F2;
+}
+.top .media-icons a:nth-child(4):hover{
+    color: #1DA1F2;
+    background: #ffffff;
+}
+.top .media-icons a:nth-child(5){
+    background: #0077B5;
+}
+.top .media-icons a:nth-child(5):hover{
+    color: #0077B5;
+    background: #ffffff;
+}
+footer .content  .link-boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 0.4px solid #ffffff;
+  }
+
+.box{
+    width: 25%;
+    padding: 0 10px;
+}
+.box h4{
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.box ul{
+    list-style: none;
+}
+.box ul li{
+    margin: 6px 0;
+}
+.box ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+    transition: all 0.3s ease;
+}
+.box ul li a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.box .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: #3c3c3c;
+}
+.box .form-sub input::placeholder{
+    color: #ffffff;
+}
+.box .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #3c3c3c;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: #ffffff;        
+}
+
+footer .bottom-details{
+    width: 100%;
+    
+}
+footer .bottom-details .bottom_text{
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    opacity: 0.8;
+    text-decoration: none;
+}
+.bottom-details .bottom_text a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+    margin-right: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+    .box{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .box{
+        width: 100%;
+    }
+}
